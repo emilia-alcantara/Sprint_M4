@@ -121,7 +121,7 @@
         android:gravity="center"
         android:padding="15dp"
         android:text="Contacto por correo"
-        android:textColor="#2D3565"
+        android:textColor="#0A515B"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
         app:layout_constraintHorizontal_bias="0.0"
