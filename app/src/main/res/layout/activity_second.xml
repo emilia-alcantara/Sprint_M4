@@ -8,24 +8,30 @@
 
     <TextView
         android:id="@+id/textViewSecondAct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_width="410dp"
+        android:layout_height="71dp"
+        android:fontFamily="@font/farro_medium"
+        android:gravity="center"
+        android:text="Datos de contacto:"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.001" />
 
     <Button
         android:id="@+id/buttonLinkedIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="Button"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#63B6C1"
+        android:text="Ir a LinkedIn"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewSecondAct"
-        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="@+id/textViewSecondAct"
         app:layout_constraintTop_toBottomOf="@+id/textViewSecondAct" />
 
@@ -34,8 +40,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:text="Button"
+        android:backgroundTint="#63B6C1"
+        android:text="Obtener número"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonLinkedIn"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonLinkedIn"
         app:layout_constraintTop_toBottomOf="@+id/buttonLinkedIn" />
 
@@ -43,39 +53,78 @@
         android:id="@+id/buttonEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonWhatsApp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonWhatsApp" />
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#63B6C1"
+        android:text="Enviar correo"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCorreo"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <ImageView
         android:id="@+id/imageViewLinkedIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonLinkedIn"
         app:layout_constraintEnd_toStartOf="@+id/buttonLinkedIn"
         app:layout_constraintTop_toTopOf="@+id/buttonLinkedIn"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/linkedin" />
 
     <ImageView
         android:id="@+id/imageViewWhatsApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonWhatsApp"
         app:layout_constraintEnd_toStartOf="@+id/buttonWhatsApp"
         app:layout_constraintTop_toTopOf="@+id/buttonWhatsApp"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/whatsapp" />
 
     <ImageView
         android:id="@+id/imageViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonEmail"
-        app:layout_constraintEnd_toStartOf="@+id/buttonEmail"
-        app:layout_constraintTop_toTopOf="@+id/buttonEmail"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.521"
         app:srcCompat="@drawable/correo" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="265dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Escribe tu mensaje"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#63B6C1"
+        android:fontFamily="@font/farro_medium"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Contacto por correo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWhatsApp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

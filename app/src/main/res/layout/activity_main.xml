@@ -22,10 +22,13 @@
         android:id="@+id/textViewMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:text="TextView"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/farro_medium"
+        android:gravity="center"
+        android:text="Hola, mi nombre es Emilia\n si quieres contactarme,\n toca el botón de abajo!"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageViewMain"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="@+id/imageViewMain"
         app:layout_constraintTop_toBottomOf="@+id/imageViewMain" />
 
@@ -34,10 +37,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
-        android:text="Button"
+        android:backgroundTint="#63B6C1"
+        android:text="Contacto"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewMain"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="@+id/textViewMain"
         app:layout_constraintTop_toBottomOf="@+id/textViewMain" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

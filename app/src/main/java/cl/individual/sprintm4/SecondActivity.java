@@ -34,16 +34,31 @@ public class SecondActivity extends AppCompatActivity {
         binding.buttonWhatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent irWhatsApp = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
-                startActivity(irWhatsApp);
+                Intent call = new Intent(Intent.ACTION_DIAL);
+                call.setData(Uri.parse("tel:+569966773270"));
+                startActivity(call);
             }
         });
 
         binding.buttonEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent irEmail = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.gmail.com"));
-                startActivity(irEmail);
+
+                String mensajeIngresado = binding.editTextCorreo.getText().toString();
+                String[] to= {"correoalcantaraemilia@gmail.com"};
+
+                Intent enviarCorreo = new Intent(Intent.ACTION_SEND);
+                enviarCorreo.setType("text/plain");
+
+
+                enviarCorreo.putExtra(Intent.EXTRA_EMAIL, to);
+                enviarCorreo.putExtra(Intent.EXTRA_SUBJECT, "Asunto del mensaje");
+
+
+                enviarCorreo.putExtra(Intent.EXTRA_TEXT, mensajeIngresado);
+
+
+                startActivity(Intent.createChooser(enviarCorreo, "Enviar correo electrónico a través de: "));
             }
         });
     }
