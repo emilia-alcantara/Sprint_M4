@@ -6,4 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <TextView
+        android:id="@+id/textViewSecondAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/buttonLinkedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSecondAct"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="@+id/textViewSecondAct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSecondAct" />
+
+    <Button
+        android:id="@+id/buttonWhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLinkedIn"
+        app:layout_constraintStart_toStartOf="@+id/buttonLinkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLinkedIn" />
+
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWhatsApp" />
+
+    <ImageView
+        android:id="@+id/imageViewLinkedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLinkedIn"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLinkedIn"
+        app:layout_constraintTop_toTopOf="@+id/buttonLinkedIn"
+        app:srcCompat="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/imageViewWhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonWhatsApp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWhatsApp"
+        app:layout_constraintTop_toTopOf="@+id/buttonWhatsApp"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEmail"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEmail"
+        app:layout_constraintTop_toTopOf="@+id/buttonEmail"
+        app:srcCompat="@drawable/correo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
