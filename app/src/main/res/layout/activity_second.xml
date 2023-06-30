@@ -8,30 +8,32 @@
 
     <TextView
         android:id="@+id/textViewSecondAct"
-        android:layout_width="410dp"
-        android:layout_height="71dp"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:background="#0A515B"
         android:fontFamily="@font/farro_medium"
         android:gravity="center"
         android:text="Datos de contacto:"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonLinkedIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="#63B6C1"
         android:text="Ir a LinkedIn"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewSecondAct"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="@+id/textViewSecondAct"
         app:layout_constraintTop_toBottomOf="@+id/textViewSecondAct" />
 
@@ -76,9 +78,9 @@
 
     <ImageView
         android:id="@+id/imageViewWhatsApp"
-        android:layout_width="48dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonWhatsApp"
         app:layout_constraintEnd_toStartOf="@+id/buttonWhatsApp"
         app:layout_constraintTop_toTopOf="@+id/buttonWhatsApp"
@@ -106,7 +108,7 @@
         android:hint="Escribe tu mensaje"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -115,12 +117,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:background="#63B6C1"
         android:fontFamily="@font/farro_medium"
         android:gravity="center"
         android:padding="15dp"
         android:text="Contacto por correo"
-        android:textColor="@color/white"
+        android:textColor="#2D3565"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
         app:layout_constraintHorizontal_bias="0.0"

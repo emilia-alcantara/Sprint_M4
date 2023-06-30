@@ -8,21 +8,21 @@
 
     <ImageView
         android:id="@+id/imageViewMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="281dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/woman" />
 
     <TextView
         android:id="@+id/textViewMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="92dp"
         android:fontFamily="@font/farro_medium"
         android:gravity="center"
         android:text="Hola, mi nombre es Emilia\n si quieres contactarme,\n toca el botón de abajo!"
@@ -30,19 +30,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageViewMain"
         app:layout_constraintStart_toEndOf="@+id/imageViewMain"
         app:layout_constraintTop_toTopOf="@+id/imageViewMain"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.174" />
 
     <Button
         android:id="@+id/buttonMainToSecondAct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="68dp"
         android:backgroundTint="#63B6C1"
-        android:text="Button"
+        android:text="Contacto"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewMain"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="@+id/textViewMain"
         app:layout_constraintTop_toBottomOf="@+id/textViewMain" />
 
