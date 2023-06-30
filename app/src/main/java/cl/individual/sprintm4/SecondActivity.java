@@ -35,7 +35,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent call = new Intent(Intent.ACTION_DIAL);
-                call.setData(Uri.parse("tel:+569966773270"));
+                call.setData(Uri.parse("tel:+56999999999"));
                 startActivity(call);
             }
         });
@@ -45,7 +45,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String mensajeIngresado = binding.editTextCorreo.getText().toString();
-                String[] to= {"correoalcantaraemilia@gmail.com"};
+                String[] to= {"correo@gmail.com"};
 
                 Intent enviarCorreo = new Intent(Intent.ACTION_SEND);
                 enviarCorreo.setType("text/plain");
